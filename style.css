@@ -62,6 +62,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  justify-content: space-around;
 }
 
 .logo {
@@ -70,13 +71,9 @@ header {
   color: #fff;
 }
 
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
 header nav ul {
   display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -96,17 +93,15 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
-  flex-direction: column;
 }
 
 form label {
   font-weight: bold;
-}
-form div {
-  display: flex;
-  justify-content: space-around;
 }
 
 form select,
@@ -143,3 +138,66 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 600px) {
+  header {
+    background-color: #ff385c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header nav {
+    padding: 10px;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .vacation-form .item {
+    display: flex block;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  .item label
+  , .item input 
+  , .item select 
+  , .item button{
+    display: flex;
+    width: 100%
+  }
+  .grid img{
+    width:80%
+  }
+  
+  .column img{
+      width: 20%;
+      padding: 5px;
+    }
+  
+  .last{
+      flex-direction: row;
+      display:flex;   
+    }
+
+  .grid-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    margin: 10px;
+  }
+
+  .grid-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
