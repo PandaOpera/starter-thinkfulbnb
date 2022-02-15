@@ -50,6 +50,12 @@ main img {
   flex: 2;
 }
 
+.container {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column
+}
+
 /* -------  Navigation ------- */
 
 header {
@@ -62,6 +68,15 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
 }
 
 header nav ul li {
@@ -83,10 +98,15 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  flex-direction: column;
 }
 
 form label {
   font-weight: bold;
+}
+form div {
+  display: flex;
+  justify-content: space-around;
 }
 
 form select,
@@ -114,6 +134,12 @@ footer p {
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* -------  Media Query ------- */
