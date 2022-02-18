@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -119,6 +119,10 @@ form button {
   width: 100%;
 }
 
+form fieldset div {
+  justify-content: space-between;
+  display: flex;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -153,7 +157,10 @@ footer p {
   form {
     flex-direction: row;
   }
-
+#host div {
+  display: flex;
+  
+}
   .group {
     display: flex;
     flex-direction: row;
